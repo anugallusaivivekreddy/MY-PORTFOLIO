@@ -54,8 +54,16 @@
                 <h4>Hello , Nice to see you! I'm</h4>
                 <h1>A<span class="surname">nugallu</span> S<span>ai </span><span class="span2"></span>V<span>ivek</span>    R<span>eddy</span></h1>
                 <h2>Specialized in <span class="span2">AI</span> & <span class="span2">Data Science</span></h2>
-                <button class="btn1">Hire Me</button>
-                <button class="btn2">Resume  <i class="https://drive.google.com/file/d/1nGrWKArMytv-ugHJBDDv5_K3lKYAQO8B/view?usp=sharing"></i></button>
+                <button class="btn1" onclick="scrollToContact()">Hire Me</button>
+                <button class="btn2" onclick="openPDF()">Resume <i class="bi bi-download"></i></button>
+
+<script>
+function openPDF() {
+    window.open("{{ url_for('static', filename='resume.pdf') }}", "_blank");
+}
+</script>
+
+
 
 
             </div>
@@ -233,7 +241,10 @@ Using Python and SQL to clean, process, and analyze large datasets, extracting m
                     <i class="fas fa-bars"></i>
                     <h5>Tensorflow</h5>
                     <div class="pra">
-                        <p>An open-source machine learning framework. It validates my skills in building and deploying AI models, specifically in deep learning applications, such as image recognition, natural language processing, and more. </p>
+                        <p>Open-source machine learning frameworks empower developers to build and deploy AI models, especially for deep learning tasks like image recognition and NLP.</p>
+                        <p style="text-align: center;">
+                            <a class="button" href="https://www.credential.net/a78be410-3edb-41a3-bee1-4933e2351fa6#acc.FEDO0KqH">View certificate</a>
+                        </p>
                     </div>
                 </div>
 
@@ -241,7 +252,11 @@ Using Python and SQL to clean, process, and analyze large datasets, extracting m
                     <i class="far fa-user"></i>
                     <h5>Google Cloud</h5>
                     <div class="pra">
-                        <p>It validates my skills in leveraging GCP’s tools and services for cloud computing, data storage, machine learning, and other key cloud technologies, enabling me to build scalable, efficient, and secure solutions.</p>
+                        <p>This validates my skills in using GCP's tools and services to build scalable, efficient, and secure cloud solutions encompassing computing, data storage, and machine learning.</p>
+
+                        <p style="text-align: center;">
+                            <a class="button" href="https://www.credly.com/badges/2eec21f3-ff3f-4553-8989-b237ce65bb83/public_url">View certificate</a>
+                        </p>
                     </div>
                 </div>
 
@@ -249,7 +264,10 @@ Using Python and SQL to clean, process, and analyze large datasets, extracting m
                     <i class="far fa-bell"></i>
                     <h5>AWS CP</h5>
                     <div class="pra">
-                        <p>It validates my ability to comprehend core AWS services, cloud computing concepts, and security best practices, equipping me with the skills to confidently navigate AWS and contribute to cloud-based projects.</p>
+                        <p>This validates my recognized AWS expertise, cloud computing proficiency, and security best practices knowledge, enabling effective contributions to various cloud projects.</p>
+                        <p style="text-align: center;">
+                            <a class="button" href="https://www.credly.com/badges/8eea4e0a-6b11-4d79-b802-0f2f8cb39d0e/public_url">View Certificate</a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -309,6 +327,12 @@ Using Python and SQL to clean, process, and analyze large datasets, extracting m
             </div>
         </section>
     </div>
+
+<script>
+function scrollToContact() {
+    document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+}
+</script>
 
 
 
